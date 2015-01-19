@@ -1,7 +1,7 @@
-var app = angular.module('friendsList');
+var app = angular.module('myFriendsList');
 
 app.controller('FriendController', function($scope) {
-	$scope.
+	
 	
 
 	$scope.friends = [
