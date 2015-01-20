@@ -34,7 +34,7 @@
         <input ng-model='search.name' class="form-control" placeholder="Search Your Friends' Name" >
         <input ng-model='search.current_location' class="form-control" placeholder="Search Your Friends' Location" > 
      
-        <select ng-model='sort' class="input-medium">
+        <select ng-model='sort' ng-options='option.value as option.label for option in options' class="input-medium">
             <option value='name'>Name</option>
             <option value='friend_count'># friends</option>
             <option value='current_location.city'>City</option>

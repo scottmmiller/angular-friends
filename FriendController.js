@@ -2,6 +2,13 @@ var app = angular.module('myFriendsList');
 
 app.controller('FriendController', function($scope) {
 
+    $scope.options = [
+        {value: 'name', label: 'Name'},
+        {value: 'friend_count', label: 'Friend Count'},
+        {value: 'current_location.city', label: 'City'},
+        {value: 'current_location.state', label: 'State'},
+        {value: 'current_location.country', label: 'Country'}
+    ]
 
 	$scope.friends = [
     {
